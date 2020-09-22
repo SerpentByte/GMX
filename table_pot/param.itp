@@ -1,0 +1,11 @@
+[defaults]
+;nbfunc	comb_rule
+1 		1
+
+[atomtypes]
+;name	at_num	mass	charge	part_type	c6		c12
+P0		1		1		0		A			4.0		4.0
+
+[nonbond_params]
+;i	j	func	c6		c12
+P0	P0	1		4.0		4.0

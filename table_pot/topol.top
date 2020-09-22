@@ -1,0 +1,7 @@
+#include "param.itp"
+#include "particle.itp"
+
+[system]
+[molecules]
+;name	number
+P		1331

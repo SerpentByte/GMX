@@ -1,0 +1,7 @@
+[moleculetype]
+;name	exclusions
+P		0
+
+[atoms]
+;num	at_type	res_num	res_name	at_name	cg_num	charge
+1    	P0    	1    	Part   		He    	1    	0.000

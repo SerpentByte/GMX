@@ -1,0 +1,47 @@
+;.mdp file for energy mininmization
+include						=
+define						=
+
+; RUN parameters
+integrator					=steep ;steepest gradient descent
+nsteps						=1000;00
+
+; COM removal parameters
+comm-mode					=Linear ;remove translational COM
+nstcomm						=100 ;remove COM after each 100 steps
+comm-grps					=System
+
+;EM parameters
+emtol						=10 ;Force tolerance
+emstep						=0.01 ;Initial step for EM
+
+;OUTPUT control
+nstxout						=0
+nstlog						=100
+nstenergy					=100
+nstxout-compressed			=100
+
+;Neighbour Searching
+cutoff-scheme				=Verlet
+nstlist						=10
+
+;PBC conditions
+pbc							=xyz
+periodic-molecules			=no
+verlet-buffer-tolerance	=0.005 ;[default]
+
+;VdW modifications
+rlist						=2.2 ;[VdW cutoff]
+vdwtype						=Cut-off
+vdw-modifier				=Potential-switch
+rvdw-switch					=2.0
+rvdw						=2.2
+
+;Coulomb modifications
+coulombtype					=Cut-off
+coulomb-modifier			=None
+rcoulomb-switch				=2.0
+rcoulomb					=2.2
+
+;Velocity Generation
+gen-vel						=no

@@ -1,0 +1,57 @@
+;.mdp file for energy mininmization
+include						=
+define						=
+
+; RUN parameters
+integrator					=md-vv ;Velocity Verlet algorithm
+nsteps						=100000
+tinit						=0
+dt							=0.001 ;1 fs
+init-step					=0
+
+; COM removal parameters
+comm-mode					=Linear ;remove translational COM
+nstcomm						=100 ;remove COM after each 100 steps
+comm-grps					=System
+
+;OUTPUT control
+nstxout						=0	; for trr
+nstlog						=100
+nstenergy					=100
+nstxout-compressed			=100; for xtc
+
+;Neighbour Searching
+cutoff-scheme				=Group; Verlet not supported for table potential
+nstlist						=10
+
+;PBC conditions
+pbc							=xyz
+periodic-molecules			=yes
+verlet-buffer-tolerance		=-1; rlist used
+
+;VdW modifications
+rlist						=2.2 ; [VdW cutoff]
+vdwtype						=User; for table potential
+vdw-modifier				=None
+rvdw						=2.2
+
+;Coulomb modifications
+coulombtype					=Cut-off
+;coulombtype					=User; for table potential
+coulomb-modifier			=None
+rcoulomb					=2.2
+
+;Velocity Generation
+gen-vel						=yes
+gen-temp					=303.15 ;K
+gen-seed					=-1
+
+;Temperature options
+tcoupl						=berendsen
+nsttcouple					=-1
+tc-grps						=System
+tau-t						=2.0
+ref-t						=303.15 ;K
+
+;Pressure coupling
+pcoupl						=no
