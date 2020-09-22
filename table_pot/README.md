@@ -3,12 +3,12 @@
 ## This folder contains code for implementation of 
 ## GROMACS tabulated potentials and it's benchmarkings.
 
-## Please use GROMACS 2019 or GROMACS 2018.
-## The below scripts have been tested on GROMACS 2019.6
+### Please use GROMACS 2019 or GROMACS 2018.
+### The below scripts have been tested on GROMACS 2019.6
 
-### File information
+#### File information
 
-#### Python scripts
+##### Python scripts
 
 1. init_config.py --> generation of initial structure</br>
        Usage: <path-to-python3>/python3 init_config.py <number of particles></br>
