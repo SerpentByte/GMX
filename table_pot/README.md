@@ -3,6 +3,9 @@
 ## This folder contains code for implementation of 
 ## GROMACS tabulated potentials and it's benchmarkings.
 
+## Please use GROMACS 2019 or GROMACS 2018.
+## The below scripts have been tested on GROMACS 2019.6
+
 ### File information
 
 #### Python scripts
