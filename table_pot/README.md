@@ -1,11 +1,11 @@
 # Table potential implementation and benchmarking
 
-### This folder contains code for implementation of 
-### GROMACS tabulated potentials and it's benchmarkings.
+## This folder contains code for implementation of 
+## GROMACS tabulated potentials and it's benchmarkings.
 
-## File information
+### File information
 
-### Python scripts
+#### Python scripts
 
 1. init_config.py --> generation of initial structure</br>
        Usage: <path-to-python3>/python3 init_config.py <number of particles></br>
@@ -24,7 +24,7 @@
        
 </br>
 
-### Miscellaneous scripts
+#### Miscellaneous files
 
 3. autorun.sh --> a BASH script to run all simulations.</br>
 
