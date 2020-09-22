@@ -16,7 +16,7 @@
        a perfect cubic lattice with mass=1, density=0.884. Box dimensions</br>
        are calculated from mass, number of particles and density.</br>
        Default output file is init.gro.</br>
-       *System reference: </br>
+       *System reference*: </br>
        Understanding Molecular Simulation: From Algorithms to Applications, Page 145
        
 </br>
