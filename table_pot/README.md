@@ -1,4 +1,4 @@
-5 Table potential implementation and benchmarking
+# Table potential implementation and benchmarking
 
 ### This folder contains code for implementation of 
 ### GROMACS tabulated potentials and it's benchmarkings.
