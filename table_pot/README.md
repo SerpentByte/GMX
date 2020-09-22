@@ -2,7 +2,7 @@
 
 ### This folder contains code for implementation of 
 ### GROMACS tabulated potentials and it's benchmarkings.
-</br>
+
 ## File information
 
 ### Python scripts
